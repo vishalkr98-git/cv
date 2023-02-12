@@ -1,115 +1,246 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Vishal's Personal Site</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <title>Personal Portfolio</title>
+    <!-- <link rel="stylesheet" href="script.js" type="text/Javascript"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7cbbb90713.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="v vishal">V</span><span class="ishal vishal">ishal.</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Development</p>
+                <h1>Hi,I'm <span> Vishal</span> <br> Kagathara From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vero fugit esse commodi
+                        quibusdam molestiae dolore molestias dicta, rem unde earum reprehenderit! Unde ipsum dolore nam
+                        corporis? Libero eius, sint dignissimos odio deserunt sapiente voluptates? Eveniet dicta dolorum
+                        atque, animi at ipsam provident possimus labore, sit facilis aspernatur quos expedita quidem,
+                        corporis sint accusamus praesentium asperiores!</p>
 
-    <table cellspacing="20">
-        <!-- <img src="https://qph.cf2.quoracdn.net/main-qimg-fadef4e0ee0df92d33f59ccd4f1bf8e7-lq" alt="Profile_Pic" height="120px"> -->
-        <tr>
-            <td colspan=""><img src="img/fake-human-circle-img.png" alt="profile_pic"></td>
-            <td>
-                <h1>Vishal Kagathara</h1>
-                <em>
-                    <p>Web Developer</p>
-                </em>
-                <em>
-                    <p>Department of Computer Science</p>
-                </em>
-                <a href="https://dreamuniversity.com/"><em>Xan University</em></a>
-            </td>
-        </tr>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
 
-    </table>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, esse cumque ratione rerum accusantium error
-        numquam blanditiis veniam aut temporibus delectus ipsa consequuntur sunt fuga iste aliquid. Necessitatibus quia
-        magnam placeat tenetur cumque inventore culpa! Quae dolore ullam qui nobis explicabo quaerat eveniet consequatur
-        corporis numquam, cum reiciendis debitis iste.</p>
-    <hr>
-    <h3>Books and Teaching</h3>
-    <ul>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi qui hic minima nobis, tenetur earum?</li>
-        <ul>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum culpa beatae perferendis, laborum
-                consectetur odit cupiditate eligendi ipsum dolor ut debitis dolorum facere adipisci iusto earum
-                voluptatum eum.
-            </li>
-        </ul>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur eaque quod suscipit exercitationem
-            quibusdam tenetur!</li>
-        <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, voluptate. Eveniet hic voluptates nisi
-                earum explicabo ipsam quisquam!</li>
-        </ul>
-        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus explicabo veritatis sit reprehenderit
-            porro iusto quis expedita!</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laudantium illum.</li>
-            <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-            <li>Lorem, ipsum dolor.</li>
-        </ul>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-        
-            <th>
-                <td>Date</td>
-                <td>Work</td>
-            </th>
-        
-        <tr>
-            <td>2019-2020</td>
-            <td>Customer Relationship Officer</td>
-        </tr>
-        <tr>
-            <td>2020</td>
-            <td>Social Media Marketing</td>
-        </tr>
-    </table>
-    <hr>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>skill 2</span><br>Web app Development</li>
+                            <li><span>skill 3</span><br>Web app Development</li>
+                        </ul>
+                    </div>
 
-    <h3>Skills</h3>
-    <table  cellspacing="10">
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>iOS Developement</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>Web Developement</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>Photography</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>Painting</td>
-                        <td>⭐</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <br>
-    <a href="contact.html">Contacts</a>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Experience</span><br>Web app Development</li>
+                            <li><span>Experience 2</span><br>Web app Development</li>
+                            <li><span>Experience 3</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Education</span><br>Web app Development</li>
+                            <li><span>Education 2</span><br>Web app Development</li>
+                            <li><span>Education 3</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>service</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione consequuntur debitis ea, sint
+                        est obcaecati!</p>
+                    <a href="#">Learn more</a>
+                </div>
 
 
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>service 2</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione consequuntur debitis ea, sint
+                        est obcaecati!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>service 3</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione consequuntur debitis ea, sint
+                        est obcaecati!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfiloi -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connect you to the talented people around the word.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Social Media App2</h3>
+                        <p>The app connect you to the talented people around the word.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Social Media App3</h3>
+                        <p>The app connect you to the talented people around the word.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn hide">See more</a>
+        </div>
+    </div>
 </body>
+<!-- contect -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> contect@email.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.facebook.com/vk08.17/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a target="_blank" href="https://twitter.com/kagathara_visu"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/vishal_kagathara/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/vishal-kagathara-b49769103/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="cv/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright 	&copy; Vishal.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var side_menu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        side_menu.style.right="0";
+    }
+
+    function closemenu(){
+        side_menu.style.right="-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQF9oWJAUeaQ1tCMH9UriZc3QsX5voDQ-WsnXGsEIKXSQV4lpcsuxv7k0VJ8B2_m4H/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg=document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },2500)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </html>
